@@ -125,11 +125,11 @@ El ejemplo anterior se encuentra en el archivo *App.vue*, este componente utiliz
 
 ![search box loading](https://github.com/MileydyMtz/vue-search-box-component/assets/85470047/af892641-f157-44b1-a905-a4c73566f4eb)
 
-**visualizacion de los resultados**
+**Visualizacion de los resultados**
 
 ![search box results](https://github.com/MileydyMtz/vue-search-box-component/assets/85470047/de03af29-eb5e-43f8-b270-753a3540c72c)
 
-**visualizacion del mensaje de error si no se encuentran resultados**
+**Visualizacion del mensaje de error si no se encuentran resultados**
 
 ![search box error](https://github.com/MileydyMtz/vue-search-box-component/assets/85470047/51f2ab82-8df4-4668-a5c8-9a385790dec1)
 
