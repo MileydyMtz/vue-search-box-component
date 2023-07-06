@@ -26,7 +26,7 @@ Este componente define 4 datos:
 ### CSS
 * Los estilos están definidos en la seccion de <style> y usan la extencion .scss.
 * Los estilos están "scoped", lo que significa que solo se aplicarán a este componente y no afectarán a otros componentes de la aplicación donde se reutilice.
-* Se pueden modificar las variables $search-background y $search-border-color para cambiar el color de fondo y el color del borde del cuadro de texto respectivamente.
+* Se pueden modificar las variables *$search-background* y *$search-border-color* para cambiar el color de fondo y el color del borde del cuadro de texto respectivamente.
 
 ### Métodos 
 El componente tiene los siguientes métodos: 
@@ -129,13 +129,14 @@ El ejemplo anterior se encuentra en el archivo *App.vue*, este componente utiliz
 
 ![search box results](https://github.com/MileydyMtz/vue-search-box-component/assets/85470047/de03af29-eb5e-43f8-b270-753a3540c72c)
 
-**Visualizacion del mensaje de error si no se encuentran resultados**
+**Mensaje de error si no se encuentran resultados**
 
 ![search box error](https://github.com/MileydyMtz/vue-search-box-component/assets/85470047/51f2ab82-8df4-4668-a5c8-9a385790dec1)
 
 
 ## Pruebas
-Las pruebas se han implementado utilizando la biblioteca vitest para correr las pruebas y @vue/test-utils para montar el componente. Además, se usa axios-mock-adapter para simular las respuestas de la API. A continuacion se muestran las pruebas implementadas:
+Las pruebas se han implementado utilizando la biblioteca vitest para correr las pruebas y @vue/test-utils para montar el componente. Además, se usa axios-mock-adapter para simular las respuestas de la API.
+A continuacion se muestran las pruebas implementadas:
 * **renders properly**: Verifica que el componente se renderiza correctamente.
 * **updates searchQuery when input changes**: Verifica que la propiedad searchQuery se actualiza cuando el valor del campo de entrada cambia.
 * **emits loading event when performSearch is called**: Verifica que el evento loading se emite cuando se llama al método performSearch.
