@@ -42,7 +42,9 @@ El componente emite tres eventos personalizados que los componentes padre pueden
 ## Uso del componente
 Para utilizar este componente, primero se debe descargar el archivo *SearchBox.vue* que se encuentra dentro de *src/components* y agregarlo al proyecto donde se reutilizara. 
 Dentro del proyecto se debe de importar e incluir en los componentes de la instancia de Vue.
+
 Puedes pasar las propiedades requeridas (apiUrl, searchField) y escuchar los eventos emitidos (@results, @search-error, @loading) para manejar los resultados, errores y el estado de carga de la búsqueda, respectivamente.
+
 A continuacion un ejemplo:
 
 ```vue 
