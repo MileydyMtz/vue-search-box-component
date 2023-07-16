@@ -26,7 +26,7 @@ Este componente define 4 datos:
 * **isLoading** (Boolean): Un indicador para verificar si la búsqueda está en progreso. 
 
 ### CSS
-* Los estilos están definidos en la seccion de <style> y usan la extensión .scss.
+* Los estilos están definidos en la sección de <style> y usan la extensión .scss.
 * Los estilos están "scoped", lo que significa que solo se aplicarán a este componente y no afectarán a otros componentes de la aplicación donde se reutilice.
 * Se pueden modificar las variables *$search-background* y *$search-border-color* para cambiar el color de fondo y el color del borde del cuadro de texto respectivamente.
 
