@@ -47,7 +47,7 @@ Dentro del proyecto se debe de importar e incluir en los componentes de la insta
 
 Puedes pasar las propiedades requeridas (apiUrl, searchField) y escuchar los eventos emitidos (@results, @search-error, @loading) para manejar los resultados, errores y el estado de carga de la búsqueda, respectivamente.
 
-A continuación un ejemplo:
+A continuación, un ejemplo:
 
 ```vue 
 <template>
