@@ -15,8 +15,8 @@ A continuación, se enlistan las tecnologías y librerías utilizadas en el desa
 ## Características del componente
 ### Props
 El componente SearchBox tiene dos propiedades: 
-* **apiUrl** (String, obligatoria): URL de la API de la que se deben obtener los datos para la búsqueda. 
-* **searchField** (String, opcional, valor predeterminado = 'name'): El campo a utilizar para las búsquedas en los datos que retorna la API. 
+* **apiUrl** (String) (Requerido): URL de la API de la que se deben obtener los datos para la búsqueda. 
+* **searchField** (String): Es campo a utilizar para las búsquedas en los datos que retorna la API. El valor predeterminado es 'name'.
 
 ### Data
 Este componente define 4 datos: 
@@ -25,7 +25,7 @@ Este componente define 4 datos:
 * **error** (String): Cualquier error que ocurra durante la búsqueda. 
 * **isLoading** (Boolean): Un indicador para verificar si la búsqueda está en progreso. 
 
-### CSS
+### Estilos
 * Los estilos están definidos en la sección de <style> y usan la extensión .scss.
 * Los estilos están "scoped", lo que significa que solo se aplicarán a este componente y no afectarán a otros componentes de la aplicación donde se reutilice.
 * Se pueden modificar las variables *$search-background* y *$search-border-color* para cambiar el color de fondo y el color del borde del cuadro de texto respectivamente.
@@ -35,7 +35,7 @@ El componente tiene los siguientes métodos:
 * **updateSearchQuery(value)**: Este método actualiza la query de búsqueda con el valor ingresado en el campo de búsqueda. 
 * **performSearch**: Este método realiza la búsqueda. Si el campo de búsqueda está vacío, la búsqueda no se realiza. Este método también maneja el estado de carga y de error. 
 
-### Eventos emitidos
+### Eventos
 El componente emite tres eventos personalizados que el componente padre puede escuchar:
 * **results**:  Este evento se emite cuando se completa una búsqueda. Envía los resultados de la búsqueda como parámetro.
 * **search-error**: Este evento se emite cuando ocurre un error durante la búsqueda. Envía un mensaje de error como parámetro.
@@ -45,7 +45,7 @@ El componente emite tres eventos personalizados que el componente padre puede es
 Para utilizar este componente, primero se debe descargar el archivo *SearchBox.vue* que se encuentra dentro de *src/components* y agregarlo al proyecto donde se reutilizara. 
 Dentro del proyecto se debe de importar e incluir en los componentes de la instancia de Vue.
 
-Puedes pasar las propiedades requeridas (apiUrl, searchField) y escuchar los eventos emitidos (@results, @search-error, @loading) para manejar los resultados, errores y el estado de carga de la búsqueda, respectivamente.
+Puedes pasar las propiedades *apiUrl* y *searchField* y escuchar los eventos emitidos *@results*, *@search-error* y *@loading* para manejar los resultados, errores y el estado de carga de la búsqueda, respectivamente.
 
 A continuación, un ejemplo:
 
@@ -139,7 +139,8 @@ El ejemplo anterior se encuentra en el archivo *App.vue*, este componente utiliz
 
 
 ## Pruebas
-Las pruebas se han implementado utilizando la biblioteca vitest para correr las pruebas y @vue/test-utils para montar el componente. Además, se usa axios-mock-adapter para simular las respuestas de la API.
+Se utiliza la biblioteca Vitest para correr las pruebas y @vue/test-utils para montar el componente.
+ Además, se usa axios-mock-adapter para simular las respuestas de la API.
 
 A continuación, se muestran las pruebas implementadas:
 * **renders properly**: Verifica que el componente se renderiza correctamente.
